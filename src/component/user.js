@@ -1,6 +1,5 @@
 import axios from "axios"
 import React, { Component } from "react"
-import Followers from "./follow"
 
 class User extends Component {
   state = {
@@ -35,7 +34,6 @@ class User extends Component {
           <p>Location: {user.location}</p>
           <p>Login: {user.login}</p>
           <p>Repos: {user.public_repos}</p>
-          <Followers />
         </div>
       </div>
     )
