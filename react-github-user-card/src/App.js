@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="App">
       <h1>GitHub Card</h1>
+
       <User />
       <FollowerList />
     </div>

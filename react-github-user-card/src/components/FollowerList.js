@@ -4,7 +4,7 @@ import Follower from "./Follower"
 const FollowerList = () => {
   return (
     <div>
-      Follower List
+      <h1>Followers </h1>
       <div style={{ display: "flex" }}>
         <Follower />
       </div>

@@ -23,83 +23,32 @@ class Follower extends React.Component {
 
   render() {
     return (
-      <div>
-        <div>
-          {this.state.followers.map((item) => (
-            <div style={{ display: "flex", flexFlow: "wrap" }}>
-              <img style={{ width: 60 }} src={item.avatar_url} />
-              <p>{item.login}</p>
-            </div>
-          ))}
-        </div>
+      <div
+        style={{
+          display: "flex",
+          flexFlow: "wrap",
+          justifyContent: "space-around",
+          alignItems: "center",
+        }}
+      >
+        {this.state.followers.map((item) => (
+          <div
+            style={{
+              //   border: "1px solid black",
+              display: "flex",
+              flexDirection: "column",
+              marginBottom: 30,
+              alignItems: "center",
+              marginRight: 10,
+              marginLeft: 10,
+            }}
+          >
+            <img style={{ width: 130 }} src={item.avatar_url} />
+            <strong>{item.login}</strong>
+          </div>
+        ))}
       </div>
     )
   }
 }
 export default Follower
-
-// const Follower = () => {
-//   const [follower, setFollower] = useState({
-//     avatar_url: "load image",
-//     login: "load name",
-//     id: "load id",
-//   })
-//   console.log(follower)
-//   useEffect(() => {
-//     axios
-//       .get("https://api.github.com/users/NelsonMaldonado/followers")
-//       .then((res) => {
-//         setFollower({
-//           ...User,
-//           avatar_url: res.data.avatar_url,
-//           login: res.data.login,
-//           id: res.data.id,
-//         })
-//         console.log(res.data)
-//       })
-//       .catch((err) => {
-//         console.log(err)
-//       })
-//   }, [])
-
-//   return (
-//     <div>
-//       <div>Image</div>
-//     </div>
-//   )
-// }
-
-// export default Follower
-
-// const Follower = () => {
-//   const [follower, setFollower] = useState({
-//     avatar_url: "load image",
-//     login: "load name",
-//     id: "load id",
-//   })
-//   console.log(follower)
-//   useEffect(() => {
-//     axios
-//       .get("https://api.github.com/users/NelsonMaldonado/followers")
-//       .then((res) => {
-//         setFollower({
-//           ...User,
-//           avatar_url: res.data.avatar_url,
-//           login: res.data.login,
-//           id: res.data.id,
-//         })
-//         console.log(res.data)
-//       })
-//       .catch((err) => {
-//         console.log(err)
-//       })
-//   }, [])
-
-//   return (
-//     <div>
-//       <div>Image</div>
-//     </div>
-//   )
-// }
-
-// export default Follower
