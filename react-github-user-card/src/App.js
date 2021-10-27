@@ -6,7 +6,15 @@ function App() {
   return (
     <div className="App">
       <h1>GitHub Card</h1>
-
+      <div className="topBar">
+        <div className="gitHub">Github Handle</div>
+        <form>
+          <label className="search">
+            Search
+            <input />
+          </label>
+        </form>
+      </div>
       <User />
       <FollowerList />
     </div>

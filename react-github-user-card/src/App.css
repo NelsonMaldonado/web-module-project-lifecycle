@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.topBar {
+  display: flex;
+  font-size: 24px;
+  margin-bottom: 20px;
+  align-items: baseline;
+}
+
+.gitHub {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+
+.search {
+  color: white;
+  background-color: thistle;
+  padding: 1rem;
+}
